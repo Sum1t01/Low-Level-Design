@@ -37,7 +37,7 @@ public class WeatherStation implements Observable {
         }
     }
 
-    public int getTemp()
+    public int syncUpdate()
     {
         return curr_temp;
     }

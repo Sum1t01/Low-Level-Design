@@ -14,6 +14,6 @@ public class Desktop implements Observer {
     
     public void receive_update()
     {
-        System.out.println("Desktop " + id + " updated its temperature to " + obj.getTemp());
+        System.out.println("Desktop " + id + " updated its temperature to " + obj.syncUpdate());
     }
 }

@@ -14,7 +14,7 @@ public class Phone implements Observer {
     
     public void receive_update()
     {
-        System.out.println("Phone " + id + " updated its temperature to " + obj.getTemp());
+        System.out.println("Phone " + id + " updated its temperature to " + obj.syncUpdate());
     }
 
 }

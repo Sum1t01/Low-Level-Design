@@ -11,5 +11,5 @@ public interface Observable {
     void remove(Observer obj);
     void update(int temp);
     void notification();
-    int getTemp();
+    int syncUpdate();
 }

@@ -9,30 +9,31 @@ import ObserverDesignPattern.Observer.Phone;
 public class Main {
     public static void main(String args[])
     {
-        Observable ob = new WeatherStation();
-        Observer p1 = new Phone(ob, 1);
-        Observer p2 = new Phone(ob, 2);
-        Observer p3 = new Phone(ob, 3);
-        Observer p4 = new Phone(ob, 4);
+        Observable weather = new WeatherStation();
+        Observer p1 = new Phone(weather, 1);
+        Observer p2 = new Phone(weather, 2);
+        Observer p3 = new Phone(weather, 3);
+        Observer p4 = new Phone(weather, 4);
 
-        Observer d1 = new Desktop(ob, 1);
-        Observer d2 = new Desktop(ob, 2);
-        Observer d3 = new Desktop(ob, 3);
-        Observer d4 = new Desktop(ob, 4);
+        Observer d1 = new Desktop(weather, 1);
+        Observer d2 = new Desktop(weather, 2);
+        Observer d3 = new Desktop(weather, 3);
+        Observer d4 = new Desktop(weather, 4);
 
 
-        ob.add(p1);
-        ob.add(p2);
-        ob.add(p3);
-        ob.add(p4);
+        weather.add(p1);
+        weather.add(p2);
+        weather.add(p3);
+        weather.add(p4);
 
-        ob.add(d1);
-        ob.add(d2);
-        ob.add(d3);
-        ob.add(d4);
+        weather.add(d1);
+        weather.add(d2);
+        weather.add(d3);
+        weather.add(d4);
 
-        ob.update(23);
-        ob.remove(d1);
-        ob.update(24);
+        weather.update(23);
+        weather.remove(d1);
+        weather.update(24);
+        weather.update(24);
     }
 }
