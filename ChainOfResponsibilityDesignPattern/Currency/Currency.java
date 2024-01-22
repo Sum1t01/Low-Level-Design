@@ -8,4 +8,8 @@ public abstract class Currency {
     {
 
     }
+    public int getAvailableBalance()
+    {
+        return 0;
+    }
 }
